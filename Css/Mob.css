@@ -211,7 +211,11 @@
             left: .4rem;
             top: 2.1rem;
         }
-
+.statebox{position: relative;margin-top: 1rem;}
+.statebox .state{margin-left: -.9rem;}
+.stateinfo{font-size: .38rem;line-height: .6rem;padding-right:.4rem;}
+.statevideo{width:9.6rem;margin-left: -.9rem;border-radius:  .6rem 0 0 0 ;overflow: hidden;}
+.statevideo iframe{width: 100%;height: auto;aspect-ratio: 16 / 9;}
         .sloganinfo h6 {
             font-size: .4rem;
         }
@@ -229,7 +233,7 @@
           .orinfo {
             padding: 1rem 0 0 .4rem;
             margin: .4rem 0 0 0;
-            height: 16rem;
+            height: 26rem;
             z-index: 1;background: #fff;border-radius: 0 0 .6rem 0;
         }
 
@@ -242,7 +246,7 @@
             padding: 4.2rem 0 0 0;
             height: auto;
             margin: 0 0 0 1.3rem;
-            height: 16rem;
+            height: 26rem;
         }
 
         .orinfo h4.subtitle {
@@ -351,7 +355,7 @@
 
         .expinfo .info {
             padding: 1rem .2rem 1rem .4rem;
-            font-size: .36rem;
+            font-size: .32rem;
         }
 
         .expinfo .info h4.subtitle {
