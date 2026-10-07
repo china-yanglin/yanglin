@@ -47,22 +47,18 @@
         <div class="logobox">
             <div class="logo"><img src="Images/logo.png"></div>
             <div class="navbox">
-                <a href="index.html">首页</a>
-                <a href="About.html">关于我们</a>
-
-                <a href="ExploreWorld.html">探索世界</a>
-
-                <a href="DiscoverChina.html">中国旅行</a>
-
-                <a href="Services.html">服务</a>
-
-                <a href="Collaborate.html">合作</a>
-
-                <a href="Contact.html">联系我们</a>
+            <a href="#home">首页</a>
+            <a href="#about">关于我们</a>
+            <a href="#expworld">探索世界</a>
+            <a href="#goodvideo">精选视频</a>
+            <a href="#dischina">中国旅行</a>
+            <a href="#Mreach">全球影响力</a>
+<a href="#Mwork">服务与合作</a>
+<a href="#Mcontact">联系我们</a>
 
             </div>
         </div>
-        <div class="mainbox">
+        <div class="mainbox" id="home">
 
 
             <div class="info">
@@ -101,7 +97,7 @@
 
         </div>
     </div>
-    <div class="MainVideoBox"> <video class="mainVbox-video" autoplay muted loop playsinline preload="auto" style="background: url('Video/index-v1.jpg') center center no-repeat;
+    <div class="MainVideoBox" id="about"> <video class="mainVbox-video" autoplay muted loop playsinline preload="auto" style="background: url('Video/index-v1.jpg') center center no-repeat;
       background-size: contain;">
             <source src="Video/index-v1.mp4" type="video/mp4">
         </video></div>
@@ -138,7 +134,7 @@
             </div>
         </div>
     </div>
-    <div class="expword">
+    <div class="expword" id="expworld">
         <div class="expbox">
             <div class="exptitle">
                 <div class="linebox"></div>
@@ -184,7 +180,7 @@
             </div>
         </div>
     </div>
-    <div class="tim">
+    <div class="tim" id="goodvideo">
 
         <div class="timtitle">
             <h4 class="subtitle s wt">精选视频</h4>
@@ -196,18 +192,8 @@
             <div class="swiper-container">
                 <div class="stories-wrap">
 
-                    <!-- 左侧：垂直 Swiper 4.3.5 -->
                     <div class="swiper stories-swiper">
                         <div class="swiper-wrapper">
-
-
-
-
-
-
-
-
-
 
 
                             <div class="swiper-slide" style="background-image: url(Images/SIM_travel.jpg);">
@@ -453,7 +439,7 @@
 
 
     </div>
-    <div class="discn">
+    <div class="discn" id="dischina">
         <div class="line"></div>
         <div class="discntitle">
             <h4 class="subtitle s gy6">中国旅行</h4>
@@ -468,7 +454,7 @@
 
         <div id="mac-video">
             <div class="line3"></div>
-            <h1 class="title s">LANDSCAPES · CULTURE & PEOPLE · CITIES · FOOD</h1>
+            <h1 class="title s">LANDSCAPES · CULTURE & PEOPLE · CITIES<!--  · FOOD --></h1>
             <div class="swiper-container" id="title">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide page1">
@@ -483,10 +469,10 @@
                         <h3>CITIES</h3>
 
                     </div>
-                    <div class="swiper-slide page4">
+                    <!-- <div class="swiper-slide page4">
                         <h3>FOOD</h3>
 
-                    </div>
+                    </div> -->
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -498,7 +484,7 @@
                             <div class="linkbox">想来中国旅行？<br>查看旅行线路、旅行视频与合作伙伴。<br>
 
                             </div>
-                        </div><video src="Images/DiscCN1.mp4" loop muted playsinline></video>
+                        </div><video src="Video/DiscCN1.mp4" loop muted playsinline></video>
                     </div>
                     <div class="swiper-slide">
                         <div class="txt" data-swiper-parallax="-1">
@@ -507,7 +493,7 @@
 
 
                             </div>
-                        </div><video src="Images/bgv1.mp4" loop muted playsinline></video>
+                        </div><video src="Video/DiscCNCulture1.mp4" loop muted playsinline></video>
                     </div>
                     <div class="swiper-slide">
                         <div class="txt" data-swiper-parallax="-1">
@@ -516,9 +502,9 @@
 
 
                             </div>
-                        </div><video src="Images/bgv3.mp4" loop muted playsinline></video>
+                        </div><video src="Video/DiscCity1.mp4" loop muted playsinline></video>
                     </div>
-                    <div class="swiper-slide">
+                    <!-- <div class="swiper-slide">
                         <div class="txt" data-swiper-parallax="-1">
                             <p class="desc">从街头小吃到地方味道，在一餐一味中认识中国。</p>
                             <div class="linkbox">想来中国旅行？<br>查看旅行线路、旅行视频与合作伙伴。<br>
@@ -526,13 +512,13 @@
 
                             </div>
                         </div><video src="Images/bgv2.mp4" loop muted playsinline></video>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="reach">
+    <div class="reach" id="Mreach">
         <div class="line"></div>
 
         <div class="reachtitle">
@@ -693,7 +679,8 @@
     </div>
 
 
-    <div class="work" style="background:url(Images/servicebg.jpeg) center no-repeat;background-attachment: fixed;">
+    <div class="work" style="background:url(./Images/service1.jpeg) center no-repeat; background-size: cover;background-attachment: fixed;" 
+    id="Mwork">
         <div class="line1"></div>
 
 
@@ -742,7 +729,7 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="Mcontact">
         <div class="contitle">
             <h4 class="subtitle s gy6">联系我们</h4>
 

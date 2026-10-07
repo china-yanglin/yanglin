@@ -8,7 +8,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <script src="Js/flexble.js"></script>
-    <link rel="stylesheet" href="Css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.css">
     <link rel="stylesheet" href="Css/OneRain.css">
         <link rel="stylesheet" href="Css/Mob.css">
 </head>
@@ -30,22 +30,20 @@
         <div class="line"></div>
         <!-- 里面的菜单你自己写 -->
         <div class="mobile-menu-inner">
-            <a href="/">首页</a>
-            <a href="/About.html">关于我们<br>About US</a>
-            <a href="/Videos.html">探索世界<br>EXPLORE THE WORLD</a>
-            <a href="/China.html">精选视频<br>STORIES IN MOTION</a>
-            <a href="/Contact.html">中国旅行<br>DISCOVER CHINA</a>
-                        <a href="/Contact.html">全球影响力<br>Our Global Reach</a>
-
-                                    <a href="/Contact.html">服务与合作<br>WORK WITH US</a>
-
-                                                <a href="/Contact.html">联系我们<br>LET'S CONNECT</a>
+            <a href="#home">首页</a>
+            <a href="#about">关于我们<br>About US</a>
+            <a href="#expworld">探索世界<br>EXPLORE THE WORLD</a>
+            <a href="#goodvideo">精选视频<br>STORIES IN MOTION</a>
+            <a href="#dischina">中国旅行<br>DISCOVER CHINA</a>
+            <a href="#Mreach">全球影响力<br>Our Global Reach</a>
+<a href="#Mwork">服务与合作<br>WORK WITH US</a>
+<a href="#Mcontact">联系我们<br>LET'S CONNECT</a>
 
         </div>
     </div>
 
   
-    <div class="mainbox">
+    <div class="mainbox" id="home">
         <div class="info">
             <div class="en f year">
                 <span class="now">2026<div class="plogo" style="left:-5px;top:7px;"></div></span>
@@ -81,7 +79,7 @@
 
  
 
-    <div class="orinfo">
+    <div class="orinfo" id="about">
         <h4 class="subtitle s gy6">我们一直在路上</h4>
         <h2 class="title en">ALWAYS<br>ON THE ROAD</h2>
         <div class="infobox">
@@ -94,7 +92,8 @@
                     </p>
                     我们用视频记录每一次出发，也通过<b class="bg-gy6">YouTube、TikTok、Instagram、FaceBook</b>等海外平台，把真实的旅行体验分享给更多人。
                     <div class="orbnt">
-                        <div class="plogo" style="left:-.12rem;bottom: 3.7rem;"></div><a class="btn-o wt" href="#">关于我们
+                        <div class="plogo" style="left:-.12rem;bottom: 3.7rem;"></div><a class="btn-o wt"
+                        >关于我们
                             →</a>
                     </div>
                     <div class="tap">
@@ -105,15 +104,27 @@
 
                     </div>
                 </div>
+ <div class="statebox">
+                        <div class="statevideo">
+                            <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=832328750&bvid=BV1E34y1M7iU&cid=32218286020&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+                        </div>
+                        <div class="state">
+                            <div class="stateinfo s gy6">从中国大陆最南端的徐闻，到最西端的喀什；<br>从江南水乡，到世界第三极西藏阿里。<br>
+                                我们自驾、飞行，也乘铁路，穿行于这片辽阔的土地。<br>
+                                江南水乡 · 藏区寺庙 · 西域风情 · 山川高原 · 城市人文<br>
+                                中国很大，我们还在继续走。<br>
+                            </div>
+                        </div>
+                    </div>
                 <div class="video" style="background-image:url(Images/oricon.jpg);"></div>
             </div>
-        </div>
+        </div>                 
     </div>
 
    
 
 
-    <div class="expinfo"
+    <div class="expinfo" id="expworld"
         style="background: url('../Images/expWorld1.jpg') center center no-repeat;
     background-size: cover; box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, .5);">
 
@@ -130,8 +141,7 @@
                 这些旅行，被我们记录成一段段视频，成为一点雨心一路走来的旅行足迹。</p>
                 <div class="s en">🇨🇳 🇲🇾 🇮🇩 🇸🇬 🇹🇭 🇻🇳 🇱🇦 · More</div>
                 <div class="expbnt">
-                    <a href="#" class="btn-o en wt">Explore
-                        World →</a>
+                    <a class="link btn-o wt">EXPLORE WORLD →</a>
                 </div>
 
                 <div class="line"></div>
@@ -142,7 +152,7 @@
     </div>
 
 
-    <div class="goodvbox">
+    <div class="goodvbox" id="goodvideo">
         <div class="line"></div>
         <div class="goodvtitle">
             <h4 class="subtitle s gy6">精选视频</h4>
@@ -303,19 +313,19 @@
                 </div>
 
             </div>
-            <div class="swiper-pagination"></div>
+           
         </div>
     </div>
 
 
 
-<div class="expcn">
+<div class="expcn" id="dischina">
 
     <div class="expcntitle">
         <h4 class="subtitle s gy6">中国旅行</h4>
         <h3 class="title en">DISCOVER CHINA</h3>
         <div class="info s">来中国，去看看真正的中国</div>
-        <a href="DiscoverChina.html" class="link btn-o wt">EXPLORE CHINA →</a>
+        <a class="link btn-o wt">EXPLORE CHINA →</a>
     </div>
 
     <!-- ★ 三张卡片叠放在同一位置 -->
@@ -323,7 +333,7 @@
 
         <div class="expcninfo active">
             <video class="timvideo" autoplay muted loop playsinline preload="auto">
-                <source src="Images/DiscCN1.mp4" type="video/mp4">
+                <source src="Video/DiscCN1.mp4" type="video/mp4">
             </video>
             <div class="sninfo">
                 <h4>LANDSCAPES</h4>
@@ -333,7 +343,7 @@
 
         <div class="expcninfo">
             <video class="timvideo" autoplay muted loop playsinline preload="auto">
-                <source src="Images/bgv1.mp4" type="video/mp4">
+                <source src="Video/DiscCNCulture1.mp4" type="video/mp4">
             </video>
             <div class="sninfo">
                 <h4>CULTURE</h4>
@@ -350,7 +360,7 @@
                 <div class="desc">从繁华都市到街巷小城，<br>看见每座城市独有的气质。</div>
             </div>
         </div>
-        <div class="expcninfo">
+        <!-- <div class="expcninfo">
             <video class="timvideo" autoplay muted loop playsinline preload="auto">
                 <source src="Images/bgv3.mp4" type="video/mp4">
             </video>
@@ -358,13 +368,13 @@
                 <h4>FOOD</h4>
                 <div class="desc">从街头小吃到地方味道，<br>在一餐一味中认识中国。</div>
             </div>
-        </div>
+        </div> -->
     </div>
 
 </div>
 
 
-   <div class="Mreach">
+   <div class="Mreach" id="Mreach">
         <div class="reachtitle">
             <div>
                 <h4 class="subtitle s gy6">全球影响力</h4>
@@ -524,7 +534,7 @@
     </div>
 
 
-    <div class="Mwork">
+    <div class="Mwork" id="Mwork">
         <div class="workbg">
             <div class="worktitle">
                 <div class="linebox">
@@ -572,7 +582,7 @@
 
 
 
-    <div class="Mcontact">
+    <div class="Mcontact" id="Mcontact">
         <div class="Mcontitle">
             <h4 class="subtitle s gy6">联系我们</h4>
 <h3 class="title">LET'S CONNECT</h3>
@@ -608,28 +618,31 @@
         </footer>
 <div class="fixed-bg" id="fixedBg"></div>
 </body>
-<script src="Js/swiper.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
-    /* ========== 1. Swiper：精选视频 ========== */
+    /* ========== 1. Swiper：精选视频（10.x，5 秒自动） ========== */
     var goodvEl = document.querySelector('.goodvplay');
     var goodvSwiper = null;
-    if (goodvEl) {
+
+    if (goodvEl && typeof Swiper !== 'undefined') {
         goodvSwiper = new Swiper('.goodvplay', {
             slidesPerView: 1.1,
             spaceBetween: 0,
             loop: true,
             slidesOffsetBefore: 0,
-            pagination: {
-                el: '.goodvplay .swiper-pagination',
-                clickable: true,
-            }
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false
+            },
+            // ★ 关闭 Swiper 自带分页器，改用自己写的
+            pagination: false
         });
     }
 
-    /* ========== 2. 菜单：开关 + 锁滚动 ========== */
+    /* ========== 2. 菜单 ========== */
     var btn = document.getElementById('mobileMenuBtn');
     var panel = document.getElementById('mobileMenuPanel');
     var scrollY = 0;
@@ -674,7 +687,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 5000);
     }
 
-    /* ========== 4. 固定背景层：滚动切换 ========== */
+    /* ========== 4. 固定背景层 ========== */
     var bg = document.getElementById('fixedBg');
     var expinfo = document.querySelector('.expinfo');
     var mwork = document.querySelector('.Mwork');
@@ -719,7 +732,7 @@ document.addEventListener('DOMContentLoaded', function () {
         updateBg();
     }
 
-    /* ========== 5. 精选视频：只有 swiper-slide-active 才播放 ========== */
+    /* ========== 5. 视频只播 active ========== */
     (function () {
         var slides = document.querySelectorAll('.goodvplay .swiper-slide');
 
@@ -727,30 +740,23 @@ document.addEventListener('DOMContentLoaded', function () {
             slides.forEach(function (slide) {
                 var video = slide.querySelector('video');
                 if (!video) return;
-
                 if (slide.classList.contains('swiper-slide-active')) {
-                    // 当前激活的播放
                     video.play().catch(function () {});
                 } else {
-                    // 其他（含 next / prev / duplicate）暂停
                     video.pause();
                 }
             });
         }
 
-        // 初次执行
         updateVideo();
 
-        // Swiper 切换时执行（开始和结束都跑一次，保证状态正确）
         if (goodvSwiper) {
             goodvSwiper.on('slideChangeTransitionStart', updateVideo);
             goodvSwiper.on('slideChangeTransitionEnd', updateVideo);
         } else {
-            // 极端情况没拿到实例，退化为轮询
             setInterval(updateVideo, 800);
         }
 
-        // 页面切回前台时刷新一次
         document.addEventListener('visibilitychange', function () {
             if (!document.hidden) updateVideo();
         });
