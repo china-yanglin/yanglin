@@ -1,0 +1,713 @@
+ header {
+            height: 1.4rem;
+            text-align: left;position: fixed;z-index:999;background: #fff;width: 100%;
+        }
+
+        header .logo {
+            height: 1.4rem;background: #fff;
+            margin: 0;
+            padding: .2rem 0 0 .4rem;
+        }
+
+        header .logo img {
+            height: 1rem;
+            width: auto;
+        }
+
+        /* ===== 右上角菜单按钮 ===== */
+        .mobile-menu-btn {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 1.4rem;
+            height: 1.4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .15rem;
+            /* 三横之间的间距 */
+            background: #999;
+            z-index: 9999;
+            cursor: pointer;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            transition: background .3s;
+        }
+
+        /* 每一横 */
+        .mobile-menu-btn .menu-line {
+            display: block;
+            width: .7rem;
+            height: .08rem;
+            background: #fff;
+            border-radius: .1rem;
+            transition: transform .35s cubic-bezier(.4, 0, .2, 1),
+                opacity .2s ease;
+        }
+
+        /* ===== 点击后：变成 X ===== */
+        .mobile-menu-btn.open .menu-line:nth-child(1) {
+            transform: translateY(.23rem) rotate(45deg);
+        }
+
+        .mobile-menu-btn.open .menu-line:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+
+        .mobile-menu-btn.open .menu-line:nth-child(3) {
+            transform: translateY(-.23rem) rotate(-45deg);
+        }
+
+        /* ===== 面板：默认在视口上方外面，隐藏 ===== */
+        .mobile-menu-panel {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 2.6rem);
+            /* 顶部仍然留 1rem 空隙 */
+            background: #fff;
+            z-index: 9998;
+            transform: translateY(100%);
+            /* 默认藏到屏幕下方外面 */
+            transition: transform .35s cubic-bezier(.4, 0, .2, 1);
+            overflow-y: auto;
+            padding-left: 1.5rem;
+            box-sizing: border-box;overflow: hidden;
+        }
+
+        .mobile-menu-panel .line {
+            position: absolute;
+            z-index: -1;
+            border-left: 1px solid #e0e0e0;
+            top: 0;
+            left: 1.3rem;
+            width: 100%;
+            height: 100%;
+        }
+
+        .mobile-menu-panel.open {
+            transform: translateY(0);
+        }
+
+        /* 打开状态 */
+        .mobile-menu-panel.open {
+            transform: translateY(0);
+        }
+
+        /* 面板内容区，你自己随意加样式 */
+        .mobile-menu-inner {
+            padding: 1rem .4rem;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.6rem;
+            color: #333;
+        }
+
+        .mobile-menu-inner a {
+            text-decoration: none;
+            color: #333;
+            font-size: .4rem;
+            padding: .4rem 0;
+            font-weight: 300;
+        }
+
+
+
+          .mainbox {
+            height: 11rem;
+            overflow: hidden;background: #fff;top: 1.4rem;
+        }
+
+        .mainbox .info {
+            left: 1.3rem;
+        }
+
+        .mainbox .info .year {
+            height: 4.4rem;
+            left: -.32rem;
+        }
+
+        .mainbox .info .year span.now {
+            left: -.35rem;
+            bottom: .38rem;
+            font-size: .36rem;
+        }
+
+        .mainbox .info .year span.n {
+            bottom: -1rem;
+            font-size: .3rem;
+            left: -.208rem;
+            padding: 0 .2rem;
+            line-height: .4rem;
+        }
+
+        .mainbox .info .year span.p {
+            bottom: 2rem;
+            font-size: .3rem;
+            left: -.208rem;
+            padding: 0 .2rem;
+            line-height: .4rem;
+        }
+
+        .mainbox .info .year span.p1 {
+            bottom: 3.4rem;
+            left: -.16rem;
+            font-size: .28rem;
+            color: #d0d0d0;
+        }
+
+        .mainbox .info .titlebox {
+            font-size: .36rem;
+            top: 3.2rem;
+            margin: 0;
+        }
+
+        .plogo {
+            position: absolute;
+            border-radius: 50%;
+            width: 8px;height: 8px;background:  #ff0000;
+        }
+
+          .ltdinfo {
+            top: 9rem;
+            bottom: auto;
+            overflow: hidden;
+            height: 3.2rem;
+        }
+
+        .ltdinfo .slogan {
+            width: 100%;
+            left: .4rem;
+            bottom: auto;
+        }
+
+        .ltdinfo .slogan h4 {
+            font-size: .5rem;
+            margin: .1rem 0 0 0;
+        }
+
+        .slogan h4 span {
+            border-radius: .2rem 0 .2rem 0;
+        }
+
+        .slogan h1 {
+            font-size: 1.6rem;
+            line-height: 1.6rem;
+        }
+
+        .slogan h1 span {
+            font-size: 1.2rem;
+        }
+
+        .sloganinfo {
+            position: relative;
+            width: 100%;
+            text-align: left;
+            right: auto;
+            bottom: auto;
+            left: .4rem;
+            top: 2.1rem;
+        }
+
+        .sloganinfo h6 {
+            font-size: .4rem;
+        }
+
+           .MainVideoBox {
+            padding-left: .4rem;
+            z-index: 10;background: #fff;top: 1.2rem;
+        }
+
+        .mainVbox-video {
+            border-radius:  0 0  0 .6rem;
+            aspect-ratio: 16 / 9;
+        }
+
+          .orinfo {
+            padding: 1rem 0 0 .4rem;
+            margin: .4rem 0 0 0;
+            height: 16rem;
+            z-index: 1;background: #fff;border-radius: 0 0 .6rem 0;
+        }
+
+        .orinfo .infobox {
+            padding: 0;
+            height: auto;
+        }
+
+        .orinfo .infobox .linebox {
+            padding: 4.2rem 0 0 0;
+            height: auto;
+            margin: 0 0 0 1.3rem;
+            height: 16rem;
+        }
+
+        .orinfo h4.subtitle {
+            font-size: .8rem;
+            margin: 0;
+            padding: 0;
+            line-height: 1rem;
+            padding-left: 1.3rem;
+        }
+
+        .orinfo h2.title {
+            font-size: .9rem;
+            font-weight: 700;
+            white-space: nowrap;
+            line-height: .84rem;
+            padding-left: 1.3rem;
+            margin-top: .2rem;
+        }
+
+        .orinfo .infobox .info {
+            width: 100%;
+            font-size: .36rem;
+            padding: .4rem;
+            margin: .2rem 0 0;
+            border-top: 1px solid #e0e0e0;
+            line-height: .5rem;
+            position: relative;
+        }
+
+        .orinfo .infobox .info .bg-gy6 {
+            padding: 0;
+            line-height: .5rem;
+            height: .5rem;
+            padding: .01rem .06rem;
+        }
+
+        .orinfo .infobox .info .orbnt a {
+            font-size: .4rem;
+            padding: .2rem .4rem;
+        }
+
+        .btn-o {
+            border-radius: .3rem 0 .3rem 0;
+        }
+
+        .orinfo .infobox .info .orbnt {
+            margin-left: -.4rem;
+        }
+
+        .orinfo .infobox .info .tap {
+            display: block;
+            font-size: .46rem;
+            line-height: .6rem;
+            font-weight: 300;
+        }
+
+          .expinfo {margin-top: -.6rem;
+            position: relative;
+            padding: 2rem 0 1rem;
+        }
+
+        .expinfo .line {
+            position: absolute;
+            top: 0;
+            left: 1.3rem;
+            width: 6.5rem;
+            height: 2rem;
+            border-radius: 0 0 0 .6rem;
+            border-left: 1px solid #fff;
+            border-bottom: 5px solid #fff;
+        }
+
+        .expinfo .line1 {
+            top: 2rem;
+            margin-top: -5px;
+            right: .6rem;
+            position: absolute;
+            height: 15rem;
+            border-radius: 0 .6rem 0 0;
+            border-left: 1px solid #fff;
+            border-bottom: none;
+            border-left: none;
+            width: 2rem;
+            border-right: 1px solid #fff;
+            border-top: 5px solid #fff;
+        }
+
+        .expinfo .site {
+            position: relative;
+        }
+
+        .expinfo .site .line2 {
+            position: absolute;
+            top: 0;
+            left: 1.3rem;
+            width: 6.5rem;
+            height: 2rem;
+            border-radius: 0 0 0 .6rem;
+            border-left: 1px solid #fff;
+            border-bottom: 5px solid #fff;
+        }
+
+
+
+
+
+        .expinfo .info {
+            padding: 1rem .2rem 1rem .4rem;
+            font-size: .36rem;
+        }
+
+        .expinfo .info h4.subtitle {
+            font-size: 1rem;
+            text-align: right;
+            padding-right: 1rem;line-height: 1.4rem;
+        }
+
+        .expinfo .info h3.title {
+            text-align: right;
+            padding-right: 1rem;
+            margin: 0;
+            font-size: 1rem;
+            line-height: .84rem;
+        }
+
+        .expinfo .info .dsp {
+            text-align: right;
+            padding: 1rem 1rem 0 0;
+        }
+
+        .btn-o {
+            padding: .2rem .4rem;
+        }
+
+        .expbnt {
+            margin-top: .6rem;
+            position: relative;
+            z-index: 1;
+        }
+
+          .goodvbox {margin-top: -.6rem;
+            width: 100%;
+            padding: 1rem 0;
+            position: relative;background: #fff;border-radius: .6rem 0 0 0;
+        }
+
+        .goodvbox .goodvtitle h4.subtitle {
+            font-size: 1rem;
+            text-align: left;line-height: 1.4rem;
+            padding-left: 1rem;
+        }
+
+        .goodvbox .goodvtitle h3.title {
+            text-align: left;
+            padding-left: 1rem;
+            margin: 0;
+            line-height: .84rem;
+            font-size: .9rem;
+
+
+
+
+        }
+
+        .goodvbox .line {
+            position: absolute;
+            top: 0;
+            right: .6rem;
+            width: 4rem;
+            height: 1.8rem;
+            border-radius: 0 0 .6rem 0;
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 5px solid #e0e0e0;
+        }
+
+
+        .goodvplay {
+            padding-top: .6rem;
+        }
+
+        .goodvplay .swiper-slide {
+            transition: transform 0.4s ease, opacity 0.4s ease;
+            transform: scale(0.85);
+            opacity: 0.6;
+        }
+
+        .goodvplay .swiper-slide-active {
+            transform: scale(1);
+            opacity: 1;
+            z-index: 2;
+        }
+
+        .goodvbox .swiper-slide {
+            position: relative;
+        }
+
+        .goodvbox .swiper-slide video {
+            width: 100%;height: auto;
+            position: relative;
+        }
+
+        .goodvbox .tap {
+            font-size: .5rem;
+            position: absolute;
+            left: 1rem;
+            top: -.24rem;
+            z-index: 1;
+            background: #fff;
+            padding: .1rem .4rem;
+        }
+
+        .goodvbox .goodvinfo {
+            padding-left: 1rem;
+        }
+
+        .goodvbox video {
+            border-radius: 0 .6rem 0  0 
+        }
+
+        .goodvbox .goodvinfo .title {
+            font-size: .5rem;font-weight: 400;
+            line-height: .6rem;color: #333;
+            height: 1.2rem;
+            overflow: hidden;
+            margin-top: .2rem;
+            text-align: justify;
+        }
+
+        .goodvbox .goodvinfo .dsp {
+            font-size: .36rem;
+            line-height: .5rem;
+            margin: 0;
+            padding-top: .2rem;
+            text-align: justify;height: 3.6rem;
+        }
+
+           /* 外层容器 */
+.expcn {
+    position: relative;
+    text-align: right;
+    padding: 0 0 .7rem 0;
+}
+
+/* 标题块（保持你原有样式） */
+.expcn .expcntitle {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: -.6rem;
+    border-radius: 0 0 .6rem 0;
+    background: #fff;
+    z-index: 2;
+}
+.expcn .expcntitle h4.subtitle {
+    font-size: 1rem;
+    padding-right: 1rem;
+    line-height: 1rem;
+}
+.expcn .expcntitle h3.title {
+    margin: 0;
+    padding-right: 1rem;
+    line-height: .84rem;
+    font-size: .9rem;
+}
+.expcn .expcntitle .info {
+    font-size: .6rem;
+    padding-right: 1rem;
+}
+.expcn .link {
+    font-size: .32rem;
+    padding: .2rem .4rem;
+    margin-right: 1rem;
+}
+
+/* ★ 三张卡片的容器：相对定位，撑开高度 */
+.expcn-stack {
+    position: relative;
+    width: 100%;
+    height: 8.6rem;  font-weight: 200;            /* ★ 根据你卡片实际总高调整 */
+    z-index: 1;
+}
+
+/* ★ 每张卡片绝对定位叠在一起 */
+.expcninfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .8s ease;   /* ★ 淡入淡出时长，你要"不滑动直接透明换" */
+    pointer-events: none;
+}
+.expcninfo.active {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+/* 视频样式 */
+.timvideo {
+    height: 7rem;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* 卡片上的文字 */
+.expcn .sninfo {
+    font-size: .36rem;position: absolute;top: 6rem;width: 100%;
+    text-align: left;
+}
+.expcn .sninfo h4 {
+    margin-top: -.9rem;
+    font-family: ORFont;padding-left: 1rem;
+    font-weight: 600;
+    color: #fff;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 0;
+}
+.expcn .sninfo .desc {
+   background: #e0e0e0;border-radius: .6rem 0 0 0;width: 100%;padding:.2rem 1rem 1rem;
+   font-size: .6rem;box-shadow: 0 -.4rem .8rem #00000050;
+}
+
+
+.Mreach{overflow: hidden;border-radius: .6rem 0 .6rem 0;position: relative;background: #fff;margin-top:-.8rem;}
+    .Mreach .reachtitle{text-align: left; padding:1rem 0 1rem 1rem;background: #f0f0f0;border-radius: .6rem 0 0 0;   margin-top: -.6rem;margin-right: 0;position: relative;z-index: 2;}
+
+.Mreach .reachtitle h4.subtitle {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.Mreach .reachtitle h3.title {
+    margin: 0;
+
+    line-height: .84rem;
+    font-size: .9rem;
+}
+.Mreach .reachinfo{padding: .8rem .4rem;border-radius: .6rem 0 .6rem 0; margin-top: -.6rem;position: relative;z-index: 3;background: #fff;}
+.Mreach .reachinfo .Globaltitle , .Mreach .reachinfo .Chinatitle{padding:0 0 0 .6rem;font-size: .8rem;}
+
+
+
+.Mreach .reachinfo .Globalbox {border-bottom: 1px solid #e0e0e0;margin-bottom: .6rem;}
+.Mreach .reachinfo .Globalbox , .Mreach .reachinfo .Chinabox   {
+    display: flex;
+    flex-wrap: wrap;              /* ★ 允许换行 */
+    padding: 0 0 1rem;             /* 左右留点边，按你页面实际调 */
+    box-sizing: border-box;
+}
+.Mreach .reachinfo .Chinabox{padding-bottom: 0;}
+.Mreach .reachinfo .Globalbox > section {
+    width: calc(50% - .1rem);     /* ★ 一行两个，各自 50% 减去半个 gap */
+    height: 4.4rem;
+    box-sizing: border-box;    /* 如果之前有宽度，会被这行覆盖 */
+    padding: .4rem .2rem 0;text-align: right;
+}
+.Mreach .reachinfo .Chinabox > section {
+    width: calc(50% - .1rem);     /* ★ 一行两个，各自 50% 减去半个 gap */
+    height: 5rem;
+    box-sizing: border-box;    /* 如果之前有宽度，会被这行覆盖 */
+    padding: .4rem .2rem 0;text-align: right;
+}
+.Mreach .reachinfo .Globalbox > section .sitelogo{height: 1.4rem;}
+.Mreach .reachinfo .Chinabox > section .sitelogo{height: 1.8rem;text-align: center;}
+.Mreach .reachinfo .Globalbox > section .numbox-r , .Mreach .reachinfo .Chinabox > section .numbox-r{font-size: .32rem;line-height:1rem;width:1.8rem;}
+.Mreach .reachinfo .Globalbox > section .numbox-l , .Mreach .reachinfo .Chinabox > section .numbox-l{font-size: .6rem; line-height:1rem;margin-left: .2rem;text-align: left;}
+.Mreach .reachinfo section a {position: relative;bottom: .4rem;
+    border-radius: .3rem 0 .3rem 0;
+    background: #e0e0e0;
+    font-size: .32rem;
+    color: #fff;
+    padding: .1rem .2rem;
+    transition: .4s;
+}   .Mwork{margin-top: -.6rem;}
+    .Mwork .workbg{margin:0;padding:1rem 1rem 1.6rem; ;}
+.Mwork .worktitle {
+    position: relative;margin-top: 1rem;
+    padding-bottom: 1rem;
+    z-index: 2;width: 100%;
+}
+.Mwork .worktitle h4.subtitle {
+    font-size: 1rem;
+    padding-right: 1rem;
+    line-height: 1rem;
+}
+.Mwork .worktitle h3.title {
+    margin: 0;
+    padding-right: 1rem;
+    line-height: .84rem;
+    font-size: .9rem;
+}
+.workinfo{color: #fff;} 
+.brand:first-child{margin-bottom: 1rem;}
+.workinfo .titlebox{font-size: .6rem;}
+.workinfo .info{font-size: .4rem;}
+.Mwork {
+    position: relative;
+    overflow: hidden;
+}
+
+.Mwork::before {
+    content: "";
+    position: fixed;                /* 真正的 fixed 放到伪元素上 */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(./Images/service1.jpeg) center center no-repeat;
+    background-size: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.Mcontact{padding: 1rem;background: #fff;border-radius: .6rem 0 0 0;margin-top: -.6rem;position: relative;z-index: 11;}
+        .Mcontact .Mcontitle {
+    position: relative;margin-top: 0;
+    z-index: 2;width: 100%;
+}
+.Mcontact .Mcontitle h4.subtitle {
+    font-size: 1rem;
+    padding-right: 1rem;
+    line-height: 1rem;
+}
+.Mcontact .Mcontitle h3.title {
+    margin: 0;
+    padding-right: 1rem;
+    line-height: .84rem;
+    font-size: .9rem;
+}
+.site{padding: 1rem 0;}
+.site a{color: #999;}
+.Mconinfo{font-size: .4rem;}
+.coninfodec{margin-top: 1rem;}
+.coninfodec a{display: block;color: #666;line-height: .6rem;}
+
+footer{display: block;background: #fff;height: 4rem;}
+.footerlogo{padding:0 .4rem;}
+footer .footerlogo img{width: 100%;height: auto;}
+footer .cpinfo{display: block;text-align: left;line-height: .4rem;font-size: .32rem;padding:0 0 0 .4rem;color: #999;}
+
+.fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    opacity: 0;
+    visibility: hidden;                /* ★ 初始彻底不可见 */
+    pointer-events: none;              /* ★ 不挡住任何点击 */
+    transition: opacity .4s ease, visibility .4s ease;
+}
+
+.fixed-bg.show {
+    opacity: 1;
+    visibility: visible;               /* ★ 只有加了 show 才真正显示 */
+}
+.expinfo,
+.Mwork {
+    background: transparent !important;
+}
